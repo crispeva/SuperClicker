@@ -121,7 +121,8 @@ public class SlotButtonUI : MonoBehaviour
 	#region Private Methods
 	private void Click()
 	{
-		OnSlotClicked?.Invoke(this);
+        //Invoca el evento de clic
+        OnSlotClicked?.Invoke(this);
 		int clickRatio = Mathf.RoundToInt(_game.ClickRatio);
 		Click(clickRatio);
 	}
