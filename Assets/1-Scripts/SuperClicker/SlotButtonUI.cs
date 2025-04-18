@@ -27,8 +27,9 @@ public class SlotButtonUI : MonoBehaviour
 				}
 				else
 				{
-					//No more Stock!
-					GetComponent<Image>().enabled = false;
+                    //No more Stock!
+                    _audioSource.PlayOneShot(_stockAudio);
+                    GetComponent<Image>().enabled = false;
 					_clickButton.interactable = false;
 					_clicksText.enabled = false;
 				}
@@ -52,34 +53,39 @@ public class SlotButtonUI : MonoBehaviour
 	[SerializeField] private int _materialParticleIndex;
 	[Header("Preafb points")]
 	[SerializeField] private PointsElementUI _pointsPrefab;
-	
-	private GameController _game;
-	private int _stock = 5;
-	private int _clicksLeft = 0;
+	[Header("Audio")]
+	[SerializeField] private AudioClip _hitAudio;
+	[SerializeField] private AudioClip _stockAudio;
+    private AudioSource _audioSource;
 
+    private GameController _game;
+	private int _stock = 1;
+	private int _clicksLeft = 0;
 	#endregion
 
 	#region Unity Callbacks
 	private void Awake()
 	{
 		_game = FindObjectOfType<GameController>();
-		Reward.ObjectReward = this;
+		_audioSource=GetComponent<AudioSource>();
+
+        Reward.ObjectReward = this;
 	}
 
 	// Start is called before the first frame update
 	void Start()
     {
-		Initialize();
+		
 
 		_clickButton.onClick.AddListener(Click);
+        Initialize();
+        //_clickButton.onClick.AddListener(() =>
+        //{
+        //	int clickRatio = Mathf.RoundToInt(_game.ClickRatio);
+        //	Click(clickRatio);
+        //});
 
-		//_clickButton.onClick.AddListener(() =>
-		//{
-		//	int clickRatio = Mathf.RoundToInt(_game.ClickRatio);
-		//	Click(clickRatio);
-		//});
-
-		RefreshClicksText();
+        RefreshClicksText();
     }
 
 	private void Initialize()
@@ -87,7 +93,7 @@ public class SlotButtonUI : MonoBehaviour
 		ClicksLeft = _initialClics;
 
 		//Particle frame
-		float segment = 1f / 28f;
+		float segment = 1f / 12f;
 		float frame = segment * _materialParticleIndex;
 		var tex = _particles.textureSheetAnimation;
 		tex.startFrame = frame;
@@ -102,6 +108,7 @@ public class SlotButtonUI : MonoBehaviour
 		_particles.Emit(Mathf.Clamp(clickCount,1, 15));
 		ClicksLeft -= clickCount;
 		RefreshClicksText();
+		_audioSource.PlayOneShot(_hitAudio);
 		Camera.main.DOShakePosition(Mathf.Clamp(0.01f * clickCount, 0, 2));
 		if (!agent)
 		{

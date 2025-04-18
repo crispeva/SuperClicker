@@ -1,0 +1,495 @@
+fileFormatVersion: 2
+guid: 72b33f72a361fc34ca096c3e75dd2b31
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BolsasGood_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1078
+        width: 326
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027995a288e12414d875d1e70b7e34a1
+      internalID: -1643628815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolsasGood_2
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1075
+        width: 280
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3366d3a3ded1c0648898f980bd5eb2d5
+      internalID: 1195826729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolsasGood_3
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1076
+        width: 278
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dec45c952941054f9e98f548f7c2aed
+      internalID: 1268779224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolsasGood_24
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 704
+        width: 274
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4968c50feb3a8794dbbd9f85e0aadeb5
+      internalID: 527855245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolsasGood_25
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 701
+        width: 274
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931f46a0417bf78418ecb595489e3716
+      internalID: 578516744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolsasGood_26
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 701
+        width: 268
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c407dc662891145b45e0c60c8d9f6a
+      internalID: -1235210863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolsasGood_27
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 360
+        width: 272
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e3b7b6625f4c8439e678622f113080
+      internalID: 1283260935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolsasGood_28
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 360
+        width: 271
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5dfe0df2661564499ee13537c289a70
+      internalID: -556212636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolsasGood_29
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 363
+        width: 270
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95eb30c561589d0478851b4e56b2557a
+      internalID: -706660011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolsasGood_30
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 31
+        width: 273
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46be1fc6561194c42b94f5caf0b1928a
+      internalID: -94215220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolsasGood_31
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 28
+        width: 272
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2e0e8a999e7f14fac3bfd465341e3b
+      internalID: -1466361384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolsasGood_32
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 17
+        width: 314
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac37c8ac7c993dc438fe843da2bed6e9
+      internalID: 1352827888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BolsasGood_0: -1643628815
+      BolsasGood_1: -1703093863
+      BolsasGood_10: -675401912
+      BolsasGood_11: 724558067
+      BolsasGood_12: 617184961
+      BolsasGood_13: -1165590871
+      BolsasGood_14: 2096589349
+      BolsasGood_15: -135216165
+      BolsasGood_16: -653232391
+      BolsasGood_17: 257420637
+      BolsasGood_18: -1497502016
+      BolsasGood_19: 731924939
+      BolsasGood_2: 1195826729
+      BolsasGood_20: -769846789
+      BolsasGood_21: 361602752
+      BolsasGood_22: -1564495295
+      BolsasGood_23: 1306729628
+      BolsasGood_24: 527855245
+      BolsasGood_25: 578516744
+      BolsasGood_26: -1235210863
+      BolsasGood_27: 1283260935
+      BolsasGood_28: -556212636
+      BolsasGood_29: -706660011
+      BolsasGood_3: 1268779224
+      BolsasGood_30: -94215220
+      BolsasGood_31: -1466361384
+      BolsasGood_32: 1352827888
+      BolsasGood_33: -649879859
+      BolsasGood_34: -828222117
+      BolsasGood_35: 1424667768
+      BolsasGood_36: -1114826032
+      BolsasGood_37: 310721156
+      BolsasGood_38: 923449232
+      BolsasGood_39: -56854846
+      BolsasGood_4: 2091729754
+      BolsasGood_40: -1110806637
+      BolsasGood_41: -120092137
+      BolsasGood_42: -568427123
+      BolsasGood_43: -1509115318
+      BolsasGood_44: 1686655106
+      BolsasGood_45: 1524945641
+      BolsasGood_46: -1367939452
+      BolsasGood_47: 92620324
+      BolsasGood_48: -154869678
+      BolsasGood_49: -449792977
+      BolsasGood_5: 1472195949
+      BolsasGood_50: 143797991
+      BolsasGood_51: -1900852976
+      BolsasGood_52: 1731460262
+      BolsasGood_53: -518373051
+      BolsasGood_54: -130398389
+      BolsasGood_55: -60882650
+      BolsasGood_56: 1170509555
+      BolsasGood_57: 1816378626
+      BolsasGood_58: 1478858592
+      BolsasGood_59: 856989942
+      BolsasGood_6: 914819861
+      BolsasGood_60: -1588562665
+      BolsasGood_61: 1256007906
+      BolsasGood_62: -515175439
+      BolsasGood_63: -659875894
+      BolsasGood_64: 1310648209
+      BolsasGood_65: 253695362
+      BolsasGood_66: 1743555690
+      BolsasGood_67: 423844380
+      BolsasGood_68: 1271868214
+      BolsasGood_69: 1096242905
+      BolsasGood_7: -116839599
+      BolsasGood_70: -749262784
+      BolsasGood_71: -1656660744
+      BolsasGood_72: -1714918988
+      BolsasGood_73: -515612431
+      BolsasGood_74: 611867685
+      BolsasGood_75: -702505524
+      BolsasGood_76: -1929889500
+      BolsasGood_77: -1628605625
+      BolsasGood_78: -1580839567
+      BolsasGood_79: 1374553755
+      BolsasGood_8: 1682340077
+      BolsasGood_80: -242350210
+      BolsasGood_81: 1682732342
+      BolsasGood_82: 1998430656
+      BolsasGood_83: -1181183439
+      BolsasGood_84: 1996824081
+      BolsasGood_85: -2044255764
+      BolsasGood_86: -1405985257
+      BolsasGood_87: 727916160
+      BolsasGood_88: 1737829100
+      BolsasGood_89: 140080217
+      BolsasGood_9: -131089163
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

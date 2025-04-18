@@ -16,11 +16,18 @@ public class GameController : MonoBehaviour
 	[SerializeField] private TextMeshProUGUI _clicksText;
 
 	[SerializeField] private ParticleSystem _particlesRain;
-	#endregion
+	 private AudioSource _audioSource;
+	[SerializeField] private AudioClip _audioReward;
+    #endregion
 
-	#region Unity Callbacks
-	// Start is called before the first frame update
-	void Start()
+    #region Unity Callbacks
+    // Start is called before the first frame update
+    private void Awake()
+    {
+        //Initialization
+        _audioSource = GetComponent<AudioSource>();
+    }
+    void Start()
     {
 		SlotButtonUI.OnSlotReward += GetReward;
     }
@@ -81,12 +88,12 @@ public class GameController : MonoBehaviour
 		//Initialziation
 		if (!_rewardText.gameObject.activeSelf)
 		{
-			_rewardText.gameObject.SetActive(true);
+            _rewardText.gameObject.SetActive(true);
 			_rewardText.transform.localScale = Vector3.zero;
 		}
-
-		//Update text
-		_rewardText.text = "REWARD\n " + reward.RewardType + reward.Value + " Clicks";
+        _audioSource.PlayOneShot(_audioReward);
+        //Update text
+        _rewardText.text = "REWARD\n " + reward.RewardType + reward.Value + " Clicks";
 
 		// Crear una secuencia
 		Sequence mySequence = DOTween.Sequence();
