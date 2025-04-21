@@ -76,9 +76,8 @@ public class GameController : MonoBehaviour
 
 		if (reward.RewardType == RewardType.Agent)
 		{
-			Agent newAgent = Instantiate(_agents[(int)reward.Value],transform.position, Quaternion.identity);
-			newAgent.destiny = reward.ObjectReward;
-
+            Agent newAgent = Instantiate(_agents[(int)reward.Value], transform.position, Quaternion.identity);
+            newAgent.destiny = reward.ObjectReward;
 			return;
 		}
 	}

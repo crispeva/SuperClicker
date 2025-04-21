@@ -2,19 +2,19 @@ using UnityEngine;
 using System;
 using DG.Tweening;
 
-public class Agent : MonoBehaviour
+public abstract class Agent : MonoBehaviour
 {
 	#region Properties
 	public SlotButtonUI destiny { get; set; }
 	[field: SerializeField] public float RepeatRate { get; set; }
-	#endregion
+    #endregion
 
-	#region Fields
-	#endregion
+    #region Fields
+    #endregion
 
-	#region Unity Callbacks
-	// Start is called before the first frame update
-	void Start()
+    #region Unity Callbacks
+    // Start is called before the first frame update
+    void Start()
     {
 		Movement();
 		InvokeRepeating(nameof(Click), 1, RepeatRate);
@@ -27,16 +27,11 @@ public class Agent : MonoBehaviour
 		Movement();
 	}
 
-	private void Click()
-	{
-		destiny.Click(1, true);
-		//Only Angel
-		if (destiny.ClicksLeft < 0)
-			Destroy(gameObject);
-	}
 
-	// Update is called once per frame
-	void Update()
+	
+    protected abstract void Click();
+    // Update is called once per frame
+    void Update()
     {
         
     }

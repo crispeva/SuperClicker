@@ -23,16 +23,17 @@ public class SlotButtonUI : MonoBehaviour
 				_stock--;
 				if (_stock > 0)
 				{
-					_clicksLeft = _initialClics;
-				}
+					_clicksLeft = _initialClics; //Incrementar un 15% los initial clicks cada vez que se gaste un stock
+                }
 				else
 				{
                     //No more Stock!
                     _audioSource.PlayOneShot(_stockAudio);
-                    GetComponent<Image>().enabled = false;
+					 GetComponent<Image>().enabled = false;
 					_clickButton.interactable = false;
 					_clicksText.enabled = false;
-				}
+					//Destroy(gameObject);
+                }
 				RefreshClicksText();
 			}
 		} 
@@ -59,7 +60,7 @@ public class SlotButtonUI : MonoBehaviour
     private AudioSource _audioSource;
 
     private GameController _game;
-	private int _stock = 1;
+	private int _stock = 3;
 	private int _clicksLeft = 0;
 	#endregion
 
@@ -104,18 +105,22 @@ public class SlotButtonUI : MonoBehaviour
 	#region Public Methods
 	public void Click(int clickCount, bool agent = false)
 	{
-		_particles.startSpeed = Mathf.Clamp(clickCount / 2, 1, 30);
-		_particles.Emit(Mathf.Clamp(clickCount,1, 15));
-		ClicksLeft -= clickCount;
-		RefreshClicksText();
-		_audioSource.PlayOneShot(_hitAudio);
-		Camera.main.DOShakePosition(Mathf.Clamp(0.01f * clickCount, 0, 2));
-		if (!agent)
+		if (_clickButton.interactable)
 		{
-			PointsElementUI newPoints = _game.Pool.GetPoints();
-			newPoints.Initialize(transform);
-			_game.RainParticles();
-		}
+            _particles.startSpeed = Mathf.Clamp(clickCount / 2, 1, 30);
+            _particles.Emit(Mathf.Clamp(clickCount, 1, 15));
+            ClicksLeft -= clickCount;
+            RefreshClicksText();
+            _audioSource.PlayOneShot(_hitAudio);
+            Camera.main.DOShakePosition(Mathf.Clamp(0.01f * clickCount, 0, 2));
+            if (!agent)
+            {
+                PointsElementUI newPoints = _game.Pool.GetPoints();
+                newPoints.Initialize(transform);
+                _game.RainParticles();
+            }
+        }
+		
 	}
 
 	private void RefreshClicksText()

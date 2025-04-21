@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
-      value: 11
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField
@@ -267,7 +267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
-      value: 20
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField
@@ -393,7 +393,7 @@ PrefabInstance:
       objectReference: {fileID: -187856223, guid: 5458a0a9655824543ab7b4a5e03235d2, type: 3}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
-      value: 18
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField
@@ -505,6 +505,7 @@ GameObject:
   - component: {fileID: 561734761}
   - component: {fileID: 561734760}
   - component: {fileID: 561734759}
+  - component: {fileID: 561734763}
   m_Layer: 5
   m_Name: InGame Canvas Machine
   m_TagString: Untagged
@@ -599,6 +600,102 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1074.3602, y: 1909.9739}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &561734763
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561734758}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 27b8724365f59d24a9fc5a8af3bf3714, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.146
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &615214530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -621,7 +718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
-      value: 17
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField
@@ -950,11 +1047,11 @@ PrefabInstance:
       objectReference: {fileID: -1284380021, guid: 5458a0a9655824543ab7b4a5e03235d2, type: 3}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _initialClics
-      value: 200
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField
@@ -1095,7 +1192,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.050980397, g: 0.5294118, b: 0.7254902, a: 1}
+  m_BackGroundColor: {r: 0.23082057, g: 0.32806873, b: 0.3679245, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1366,7 +1463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
-      value: 19
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField
@@ -1488,7 +1585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField
@@ -2644,7 +2741,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 10
+        scalar: 0
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -6496,19 +6593,19 @@ PrefabInstance:
       objectReference: {fileID: -191637910, guid: 5458a0a9655824543ab7b4a5e03235d2, type: 3}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _initialClics
-      value: 500
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField
-      value: 2.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<RewardType>k__BackingField
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6894794783197622354, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: m_Pivot.x
@@ -6613,6 +6710,7 @@ GameObject:
   - component: {fileID: 2006130953}
   - component: {fileID: 2006130956}
   - component: {fileID: 2006130955}
+  - component: {fileID: 2006130958}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -6635,10 +6733,12 @@ MonoBehaviour:
   <ClickRatio>k__BackingField: 1
   <Pool>k__BackingField: {fileID: 2006130957}
   _agents:
-  - {fileID: 4063764471889246418, guid: 45bf8ccbc51cba840b457546418c3e9b, type: 3}
+  - {fileID: 1542793272601435969, guid: 45bf8ccbc51cba840b457546418c3e9b, type: 3}
+  - {fileID: 8670975517670741252, guid: 812cfad36415736409e42abda5fe1472, type: 3}
   _rewardText: {fileID: 1007179591}
   _clicksText: {fileID: 2041800782}
   _particlesRain: {fileID: 1870281907}
+  _audioReward: {fileID: 8300000, guid: 3c31b8d9144983c46a626d2771eb036a, type: 3}
 --- !u!4 &2006130954
 Transform:
   m_ObjectHideFlags: 0
@@ -6740,6 +6840,102 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pointsPrefab: {fileID: 6119242216037446272, guid: ce809ce078c8feb47ba03392ad620612, type: 3}
+--- !u!82 &2006130958
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006130952}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2028512418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6758,7 +6954,7 @@ PrefabInstance:
       objectReference: {fileID: -1556912093, guid: 5458a0a9655824543ab7b4a5e03235d2, type: 3}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
-      value: 12
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField
@@ -7014,7 +7210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField
@@ -7140,7 +7336,7 @@ PrefabInstance:
       objectReference: {fileID: -1817732681, guid: 5458a0a9655824543ab7b4a5e03235d2, type: 3}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
-      value: 13
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField
@@ -7290,7 +7486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField

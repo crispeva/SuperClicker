@@ -1,0 +1,1231 @@
+fileFormatVersion: 2
+guid: 6082ab005cd27f344be43a25e172461d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1485
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292f8d0fdf39a22439848cbb090a7bcc
+      internalID: -1486074168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_1
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1483
+        width: 61
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76584451c260b2943873dcd970e971ad
+      internalID: 1292695951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_2
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1485
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd48f8c98c4cba448ff9ac798bc193b
+      internalID: 39866124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_3
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1486
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426f97a2b652bfd438216e78240513f5
+      internalID: -1996676430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_4
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 1484
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28179c9c5248bfe4c8245329027a496c
+      internalID: 2138836755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_5
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1483
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a960aaa83e5c3429cdb15cdfd322bb
+      internalID: -1243016980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_6
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1319
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f1b2acd0e708a408f04d2a7fb8eaaf
+      internalID: -940961101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_7
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1320
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb27921fdeda87408168d234eb78eb5
+      internalID: -1604433924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_8
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1320
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aca688314e132c42b2c335ac54ac0a7
+      internalID: 1982251713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_9
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1318
+        width: 61
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee985edf0c1cb649872ea9d6bdc60c3
+      internalID: 422031969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_10
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 1320
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099f18c6e52f06f4e974ed488a03f335
+      internalID: 1503605408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_11
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1321
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68f54d819b8e744fa16db0634737e56
+      internalID: 1923730082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_12
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1154
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a1289245da08f4ebc8948b1014649c
+      internalID: -810674771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_13
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1157
+        width: 55
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab86c9a97ff93cf43b6f726f3d4349b8
+      internalID: 1977183897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_14
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1155
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfce79c21013b6438a3ad70b343cb85
+      internalID: 760307115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_15
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1154
+        width: 58
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ed5c03314de5b45b80beff0dc3d6fb
+      internalID: 1442493309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_16
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1155
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a2c20484cb87843846d92c34a82ad4
+      internalID: -835726376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_17
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1155
+        width: 59
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7cf957119f6c44390e9a5ebe3e517e
+      internalID: 695158590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_18
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 989
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5691937e4ef29be419e81bc011e0b7d1
+      internalID: 455707713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_19
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 990
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc35fb7d30d5f124ba41c5408db34f10
+      internalID: -302228499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_20
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 990
+        width: 59
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9855d30780147547bb88222de3040db
+      internalID: 1255204720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_21
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 989
+        width: 58
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b04139138a994c419e0720de576c2d3
+      internalID: -1823699755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_22
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 989
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9c46b8e9cfbf749b3731186b8babe7
+      internalID: 1998417347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_23
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 992
+        width: 55
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0db4291d47713c4aafd7934861a7a31
+      internalID: 559443716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_24
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 825
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd11aa05f77e58b4d8d54ef80c73c158
+      internalID: 1841527113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_25
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 825
+        width: 61
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e692013c91b307849b66edc071efcebf
+      internalID: -1292716507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_26
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 824
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1b216e0a415db448232b4e6dc9cd82
+      internalID: 699040588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_27
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 823
+        width: 61
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc3a93226cca9045adde6a9b61b417d
+      internalID: -1735662368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_28
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 824
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04c67354962fb94b8c692ba1801fd80
+      internalID: 2147064464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_29
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 825
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36802133411d7464195fa5f1660c1ada
+      internalID: 1426369608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_30
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 659
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bdfc6b09515b5469176ef66b7b82c5
+      internalID: 1143330284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_31
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 660
+        width: 58
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21278508149074b45afc1ba9351ebdf7
+      internalID: -816121519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_32
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 659
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c563f46c835fa3b439374687682ebeb0
+      internalID: -1416566227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_33
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 662
+        width: 56
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818fac85506e0a043ad3aac898e87f71
+      internalID: -874834053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_34
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 657
+        width: 62
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530392ed7534bb440bcb1b6455ac6861
+      internalID: 1772841555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_35
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 660
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477314a0238dd914a8b3f7726c407dff
+      internalID: 1778686082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_36
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 494
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bafb6d2812ba0640ade1b67bb13bf01
+      internalID: -103265829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_37
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 497
+        width: 55
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1ab162cd9bec94a8eeb5adaaa42832
+      internalID: 339858589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_38
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 488
+        width: 69
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233c71441601c344a8e55e618063d62c
+      internalID: -1038459095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_39
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 486
+        width: 69
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee15f16e9508574eb6472f989f50804
+      internalID: -1831384890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_40
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 484
+        width: 69
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299c960a8b7fece4992d982a97c16bcd
+      internalID: -1009432978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_41
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 491
+        width: 68
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d67a054af590f40ad5ec827edc714d
+      internalID: -2098379607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_42
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 484
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c98906f175a9f40ad19994c3bd15c3
+      internalID: -311856511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_43
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 322
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822ae56fc1aa4eb498bdbe9e4f1229ba
+      internalID: -870849187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_44
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 320
+        width: 85
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29a7223d6ef9c84f85a2d82428d4116
+      internalID: -1020276747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_45
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 322
+        width: 85
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a01f2358a51b54ba0e675eca543a94
+      internalID: -1030853738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_46
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 323
+        width: 87
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8bfeee5cada51c4b9bc0db900532388
+      internalID: -1429768087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_47
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 311
+        width: 110
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0893e856483844e40b23492cb7ef5dcc
+      internalID: 1944757967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Cookie Run OvenBreak - Angel Lightstick_48
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5
+        width: 876
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f43f1b5062e294a8327eaabb82bf4a
+      internalID: 597334306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_0: -1486074168
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_1: 1292695951
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_10: 1503605408
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_11: 1923730082
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_12: -810674771
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_13: 1977183897
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_14: 760307115
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_15: 1442493309
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_16: -835726376
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_17: 695158590
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_18: 455707713
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_19: -302228499
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_2: 39866124
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_20: 1255204720
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_21: -1823699755
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_22: 1998417347
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_23: 559443716
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_24: 1841527113
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_25: -1292716507
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_26: 699040588
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_27: -1735662368
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_28: 2147064464
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_29: 1426369608
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_3: -1996676430
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_30: 1143330284
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_31: -816121519
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_32: -1416566227
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_33: -874834053
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_34: 1772841555
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_35: 1778686082
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_36: -103265829
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_37: 339858589
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_38: -1038459095
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_39: -1831384890
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_4: 2138836755
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_40: -1009432978
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_41: -2098379607
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_42: -311856511
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_43: -870849187
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_44: -1020276747
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_45: -1030853738
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_46: -1429768087
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_47: 1944757967
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_48: 597334306
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_5: -1243016980
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_6: -940961101
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_7: -1604433924
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_8: 1982251713
+      Mobile - Cookie Run OvenBreak - Angel Lightstick_9: 422031969
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
