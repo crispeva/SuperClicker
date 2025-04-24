@@ -45,7 +45,7 @@ public  class Agent : MonoBehaviour
         {
             foreach (var agent in game._activeAgents)
             {
-                if (agent != null && agent.RepeatRate> 0.2f) 
+                if (agent != null && agent.RepeatRate> 0.2f && agent.destiny != null && agent.destiny.ClicksLeft > 0) 
                 {
                     agent.RepeatRate -= 1.3f;
                     Debug.Log("Agente " + agent.name + " Repeat rate: antes" + agent.RepeatRate);
@@ -59,7 +59,7 @@ public  class Agent : MonoBehaviour
 
             foreach (var agent in game._activeAgents)
             {
-                if (agent != null && agent.RepeatRate<0.3f)
+                if (agent != null && agent.RepeatRate<0.3f && agent.destiny != null && agent.destiny.ClicksLeft > 0)
                 {
                     agent.RepeatRate += 1.3f;
                     Debug.Log("Agente " + agent.name + " Repeat rate: despues" + agent.RepeatRate);

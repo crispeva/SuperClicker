@@ -100,8 +100,7 @@ public class SlotButtonUI : MonoBehaviour
 	public void Click(int clickCount, bool agent = false)
 	{
         //Para asegurar que el clic no se ejecute si el botón no es interactuable
-        if (_clickButton == null || !_clickButton.interactable)
-            return;
+            
         if (_clickButton.interactable)
 		{
             _particles.startSpeed = Mathf.Clamp(clickCount / 2, 1, 30);
@@ -117,8 +116,8 @@ public class SlotButtonUI : MonoBehaviour
                 _game.RainParticles();
             }
         }
-		
-	}
+       
+    }
 
 	private void RefreshClicksText()
 	{
