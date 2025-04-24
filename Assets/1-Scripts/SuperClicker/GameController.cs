@@ -2,12 +2,17 @@ using UnityEngine;
 using System;
 using TMPro;
 using DG.Tweening;
+using System.Collections;
+using static UnityEngine.InputSystem.LowLevel.InputStateHistory;
+using System.Collections.Generic;
 
 public class GameController : MonoBehaviour
 {
 	#region Properties
 	[field:SerializeField] public float ClickRatio { get; set; }
 	[field:SerializeField] public PoolSystem Pool { get; set; }
+	[field: SerializeField] public List<Agent> _activeAgents = new List<Agent>();
+
 	#endregion
 
 	#region Fields
@@ -30,6 +35,8 @@ public class GameController : MonoBehaviour
     void Start()
     {
 		SlotButtonUI.OnSlotReward += GetReward;
+        
+
     }
 	private void OnDestroy()
 	{
@@ -76,13 +83,20 @@ public class GameController : MonoBehaviour
 
 		if (reward.RewardType == RewardType.Agent)
 		{
+			
             Agent newAgent = Instantiate(_agents[(int)reward.Value], transform.position, Quaternion.identity);
             newAgent.destiny = reward.ObjectReward;
-			return;
+            _activeAgents.Add(newAgent);
+
+            if (_agents[(int)reward.Value] is GosthAgent)
+			{
+				Debug.Log("Agent 4");
+            }
+                return;
 		}
 	}
 
-	private void ShowReward(Reward reward)
+    private void ShowReward(Reward reward)
 	{
 		//Initialziation
 		if (!_rewardText.gameObject.activeSelf)

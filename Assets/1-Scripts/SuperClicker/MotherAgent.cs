@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class ThunderAgent : Agent
+public class MotherAgent : Agent 
 {
     // Start is called before the first frame update
-
     #region Properties
     #endregion
 
@@ -15,14 +13,10 @@ public class ThunderAgent : Agent
     #endregion
 
     #region Unity Callbacks
-    private void Start()
+      void Start()
     {
-       base.Start();
-        InvokeRepeating(nameof(Click), 1, RepeatRate);
-    }
-    void Update()
-    {
-        allButtons = FindObjectsOfType<SlotButtonUI>();
+        base.Start(); // Llama al Start de la clase base si es necesario
+        InvokeRepeating(nameof(Click), 1, 5f); // Llama a PerformAction cada 5 segundos
     }
     #endregion
 
@@ -32,14 +26,13 @@ public class ThunderAgent : Agent
     #region Private Methods
     protected override void Click()
     {
-
+        allButtons = FindObjectsOfType<SlotButtonUI>();
 
         // Itera sobre cada botón y realiza un clic
         foreach (var button in allButtons)
         {
-            button.Click(1, true); // Realiza un clic con el agente
+            button.Click((int)game.ClickRatio, true); // Realiza un clic con el agente
         }
     }
-    // Update is called once per frame
     #endregion
 }

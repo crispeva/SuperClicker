@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: -2125305702, guid: 5458a0a9655824543ab7b4a5e03235d2, type: 3}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _initialClics
-      value: 5000
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
@@ -149,11 +149,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<RewardType>k__BackingField
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6894794783197622354, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: m_Pivot.x
@@ -1581,7 +1581,7 @@ PrefabInstance:
       objectReference: {fileID: -1237605296, guid: 5458a0a9655824543ab7b4a5e03235d2, type: 3}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _initialClics
-      value: 700
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
@@ -1593,7 +1593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<RewardType>k__BackingField
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6894794783197622354, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: m_Pivot.x
@@ -6732,9 +6732,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ClickRatio>k__BackingField: 1
   <Pool>k__BackingField: {fileID: 2006130957}
+  _activeAgents: []
   _agents:
   - {fileID: 1542793272601435969, guid: 45bf8ccbc51cba840b457546418c3e9b, type: 3}
   - {fileID: 8670975517670741252, guid: 812cfad36415736409e42abda5fe1472, type: 3}
+  - {fileID: 8145476643855024612, guid: e103e18c72b1e1b458df7213fb171f2c, type: 3}
+  - {fileID: 1193523677114726287, guid: f74c47c1bd316b04998187fa556aab01, type: 3}
   _rewardText: {fileID: 1007179591}
   _clicksText: {fileID: 2041800782}
   _particlesRain: {fileID: 1870281907}

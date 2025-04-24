@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e0ea13412977f4e8bdc7517f48279e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <RepeatRate>k__BackingField: 1
+  <RepeatRate>k__BackingField: 30
 --- !u!212 &2278757983274575428
 SpriteRenderer:
   m_ObjectHideFlags: 0

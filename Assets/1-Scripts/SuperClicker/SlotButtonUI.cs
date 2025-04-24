@@ -60,7 +60,7 @@ public class SlotButtonUI : MonoBehaviour
     private AudioSource _audioSource;
 
     private GameController _game;
-	private int _stock = 3;
+	private int _stock = 2;
 	private int _clicksLeft = 0;
 	#endregion
 
@@ -80,12 +80,6 @@ public class SlotButtonUI : MonoBehaviour
 
 		_clickButton.onClick.AddListener(Click);
         Initialize();
-        //_clickButton.onClick.AddListener(() =>
-        //{
-        //	int clickRatio = Mathf.RoundToInt(_game.ClickRatio);
-        //	Click(clickRatio);
-        //});
-
         RefreshClicksText();
     }
 
@@ -105,7 +99,10 @@ public class SlotButtonUI : MonoBehaviour
 	#region Public Methods
 	public void Click(int clickCount, bool agent = false)
 	{
-		if (_clickButton.interactable)
+        //Para asegurar que el clic no se ejecute si el botón no es interactuable
+        if (_clickButton == null || !_clickButton.interactable)
+            return;
+        if (_clickButton.interactable)
 		{
             _particles.startSpeed = Mathf.Clamp(clickCount / 2, 1, 30);
             _particles.Emit(Mathf.Clamp(clickCount, 1, 15));
