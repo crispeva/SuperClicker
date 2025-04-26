@@ -20,11 +20,10 @@ public class SlotButtonUI : MonoBehaviour
 
 				//Reward Event
 				OnSlotReward?.Invoke(Reward);
-				_stock--;
+                _stock--;
 				if (_stock > 0)
 				{
-                    _initialClics = Mathf.RoundToInt(_initialClics * 1.15f); //Incrementar un 15% los initial clicks cada vez que se gaste un stock
-                    _clicksLeft = _initialClics; //Incrementar un 15% los initial clicks cada vez que se gaste un stock
+                    _clicksLeft = _initialClics; 
                 }
 				else
 				{
@@ -35,7 +34,8 @@ public class SlotButtonUI : MonoBehaviour
 					_clicksText.enabled = false;
 					//Destroy(gameObject);
                 }
-				RefreshClicksText();
+                _clicksLeft = Mathf.RoundToInt(_clicksLeft * 1.15f); //Incrementar un 15% los initial clicks cada vez que se gaste un stock
+                RefreshClicksText();
 			}
 		} 
 	}
