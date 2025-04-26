@@ -24,7 +24,6 @@ public class GosthAgent : Agent
     protected override void Start()
     {
         base.Start();
-        //Debug.Log("¿Game es null?: " + (game == null));
         StartCoroutine(ComboSpeed());
 
 

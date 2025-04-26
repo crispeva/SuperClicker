@@ -29,7 +29,9 @@ public class AngelAgent : Agent
     #region Private Methods
     protected override void Click()
     {
-        destiny.Click(1, true);
+        
+            destiny.Click(1, true);
+        
         if (destiny.ClicksLeft < 0)
             Destroy(gameObject);
     }

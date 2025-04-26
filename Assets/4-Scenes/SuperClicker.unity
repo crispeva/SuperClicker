@@ -1047,7 +1047,7 @@ PrefabInstance:
       objectReference: {fileID: -1284380021, guid: 5458a0a9655824543ab7b4a5e03235d2, type: 3}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _initialClics
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
@@ -7209,7 +7209,7 @@ PrefabInstance:
       objectReference: {fileID: -677768409, guid: 5458a0a9655824543ab7b4a5e03235d2, type: 3}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _initialClics
-      value: 50
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
@@ -7485,7 +7485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _initialClics
-      value: 20
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex

@@ -11,7 +11,6 @@ public class ThunderAgent : Agent
     #endregion
 
     #region Fields;
-    SlotButtonUI[] allButtons;
     #endregion
 
     #region Unity Callbacks
@@ -22,7 +21,7 @@ public class ThunderAgent : Agent
     }
     void Update()
     {
-        allButtons = FindObjectsOfType<SlotButtonUI>();
+        
     }
     #endregion
 
@@ -32,12 +31,13 @@ public class ThunderAgent : Agent
     #region Private Methods
     protected override void Click()
     {
-
-
         // Itera sobre cada botón y realiza un clic
-        foreach (var button in allButtons)
+        foreach (var button in allSlotButtons)
         {
-            button.Click(1, true); // Realiza un clic con el agente
+            if (button != null)
+            {
+                button.Click(1, true);
+            }
         }
     }
     // Update is called once per frame

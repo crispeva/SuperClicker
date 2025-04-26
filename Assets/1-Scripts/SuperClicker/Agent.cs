@@ -7,34 +7,35 @@ public  class Agent : MonoBehaviour
 {
 	#region Properties
 	public SlotButtonUI destiny { get; set; }
-    [field: SerializeField] public float RepeatRate { get; set; }
+    [field: SerializeField] public float RepeatRate {
+        get {
+            return _repeatRate; 
+        }
+        set
+        {
+            // Si el valor es menor que 0.2f, se establece en 0.2f
+            _repeatRate = Mathf.Max(value, 0.2f);
+        }
+    }
+              
+   public float _repeatRate = 1.5f;
     #endregion
 
     #region Fields
     protected GameController game;
+    protected SlotButtonUI[] allSlotButtons;
     #endregion
 
     #region Unity Callbacks
-    // Start is called before the first frame update
-     void Awake()
-    {
-        
-    }
-    protected virtual void Start() //De este modo las subclases heredan start y con virtual las otras clases puedes anadir
+    protected virtual void Start() //De este modo las subclases heredan start y con virtual las otras clases puedes anadir y no sobrescriben
    {
         game = GameObject.FindObjectOfType<GameController>();
+        allSlotButtons = GameObject.FindObjectsOfType<SlotButtonUI>();
         Movement();
         RepeatRate = 1.5f;
-        UpdateRepeatRate();
     }
     protected virtual void Click()
     {
-        
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     #endregion
 
@@ -45,13 +46,10 @@ public  class Agent : MonoBehaviour
         {
             foreach (var agent in game._activeAgents)
             {
-                if (agent != null && agent.RepeatRate> 0.2f && agent.destiny != null && agent.destiny.ClicksLeft > 0) 
+                if (agent != null && agent.RepeatRate> 0.2f && agent.destiny != null ) 
                 {
                     agent.RepeatRate -= 1.3f;
                     Debug.Log("Agente " + agent.name + " Repeat rate: antes" + agent.RepeatRate);
-
-                    // Si el agente necesita actualizar su lógica basada en RepeatRate
-                    agent.UpdateRepeatRate();
                 }
             }
 
@@ -59,11 +57,10 @@ public  class Agent : MonoBehaviour
 
             foreach (var agent in game._activeAgents)
             {
-                if (agent != null && agent.RepeatRate<0.3f && agent.destiny != null && agent.destiny.ClicksLeft > 0)
+                if (agent != null && agent.RepeatRate<0.3f && agent.destiny != null)
                 {
                     agent.RepeatRate += 1.3f;
                     Debug.Log("Agente " + agent.name + " Repeat rate: despues" + agent.RepeatRate);
-                    agent.UpdateRepeatRate();
                 }
             }
 
@@ -71,17 +68,6 @@ public  class Agent : MonoBehaviour
         }
     }
 
-    private void UpdateRepeatRate()
-    {
-        // Actualiza el tiempo de invocación del clic y cancela el anterior
-        if (destiny == null || !destiny.gameObject.activeInHierarchy)
-        {
-            CancelInvoke(nameof(Click));
-            return;
-        }
-        CancelInvoke(nameof(Click));
-        InvokeRepeating(nameof(Click), 1f, RepeatRate);
-    }
     #endregion
 
     #region Private Methods

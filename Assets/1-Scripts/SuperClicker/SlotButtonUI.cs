@@ -23,7 +23,8 @@ public class SlotButtonUI : MonoBehaviour
 				_stock--;
 				if (_stock > 0)
 				{
-					_clicksLeft = _initialClics; //Incrementar un 15% los initial clicks cada vez que se gaste un stock
+                    _initialClics = Mathf.RoundToInt(_initialClics * 1.15f); //Incrementar un 15% los initial clicks cada vez que se gaste un stock
+                    _clicksLeft = _initialClics; //Incrementar un 15% los initial clicks cada vez que se gaste un stock
                 }
 				else
 				{

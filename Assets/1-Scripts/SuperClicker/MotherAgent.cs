@@ -9,14 +9,13 @@ public class MotherAgent : Agent
     #endregion
 
     #region Fields;
-    SlotButtonUI[] allButtons;
     #endregion
 
     #region Unity Callbacks
       void Start()
     {
         base.Start(); // Llama al Start de la clase base si es necesario
-        InvokeRepeating(nameof(Click), 1, 5f); // Llama a PerformAction cada 5 segundos
+        InvokeRepeating(nameof(Click), 1, 15f); // Llama a PerformAction cada 5 segundos
     }
     #endregion
 
@@ -26,12 +25,13 @@ public class MotherAgent : Agent
     #region Private Methods
     protected override void Click()
     {
-        allButtons = FindObjectsOfType<SlotButtonUI>();
-
         // Itera sobre cada botón y realiza un clic
-        foreach (var button in allButtons)
+        foreach (var button in allSlotButtons)
         {
-            button.Click((int)game.ClickRatio, true); // Realiza un clic con el agente
+            if (button != null)
+            {
+                button.Click((int)game.ClickRatio, true);
+            }// Realiza un clic con el agente
         }
     }
     #endregion
