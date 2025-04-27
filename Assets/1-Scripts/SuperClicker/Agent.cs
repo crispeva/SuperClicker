@@ -27,7 +27,11 @@ public  class Agent : MonoBehaviour
     #endregion
 
     #region Unity Callbacks
-    protected virtual void Start() //De este modo las subclases heredan start y con virtual las otras clases puedes anadir y no sobrescriben
+    //De este modo las subclases heredan start y con virtual las otras clases puedes anadir y no sobrescriben
+    private void Awake()
+    {
+    }
+    protected virtual void Start() 
    {
         game = GameObject.FindObjectOfType<GameController>();
         allSlotButtons = GameObject.FindObjectsOfType<SlotButtonUI>();

@@ -23,6 +23,9 @@ public class GameController : MonoBehaviour
 	[SerializeField] private ParticleSystem _particlesRain;
 	 private AudioSource _audioSource;
 	[SerializeField] private AudioClip _audioReward;
+	private int LogroSuma=5;
+	private int LogroMulti=100;
+	private int []LogroAgente = {1,5,20};
     #endregion
 
     #region Unity Callbacks
@@ -71,28 +74,43 @@ public class GameController : MonoBehaviour
 		{
 			ClickRatio += reward.Value;
 			_clicksText.text = "x" + ClickRatio;
-			return;
+			if(ClickRatio == LogroSuma)
+            {
+                AchievementManager.UnlockAchievement("¡Suma y sigue!");
+            }
+            return;
 		}
 		
 		if (reward.RewardType == RewardType.Multi)
 		{
 			ClickRatio *= reward.Value;
 			_clicksText.text = "x" + ClickRatio;
-			return;
+			if(ClickRatio == LogroMulti)
+            {
+				AchievementManager.UnlockAchievement("¡El rey de la tabla de mutiplicar!");
+            }
+            return;
 		}
 
 		if (reward.RewardType == RewardType.Agent)
 		{
-			
             Agent newAgent = Instantiate(_agents[(int)reward.Value], transform.position, Quaternion.identity);
             newAgent.destiny = reward.ObjectReward;
-            _activeAgents.Add(newAgent);
-
-            if (_agents[(int)reward.Value] is GosthAgent)
+            //Se añade el nuevo agente a la lista de agentes activos
+            _activeAgents.Add(newAgent); 
+			if(_activeAgents.Count== LogroAgente[0])
 			{
-				Debug.Log("Agent 4");
+                AchievementManager.UnlockAchievement("¡Has invocado un agente por primera vez!");
+			}
+			if (_activeAgents.Count == LogroAgente[1])
+			{
+                AchievementManager.UnlockAchievement("¡El amigo de los agentes!");
             }
-                return;
+            if (_activeAgents.Count == LogroAgente[2])
+            {
+                AchievementManager.UnlockAchievement("¡Consiguelo a todos!");
+            }
+            return;
 		}
 	}
 
