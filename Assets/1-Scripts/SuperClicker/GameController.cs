@@ -1,10 +1,12 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using System;
 using TMPro;
 using DG.Tweening;
 using System.Collections;
 using static UnityEngine.InputSystem.LowLevel.InputStateHistory;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -19,13 +21,15 @@ public class GameController : MonoBehaviour
 	[SerializeField] private Agent[] _agents;
 	[SerializeField] private TextMeshProUGUI _rewardText;
 	[SerializeField] private TextMeshProUGUI _clicksText;
+    [SerializeField] private TextMeshProUGUI _lastClickedScoreText;
 
-	[SerializeField] private ParticleSystem _particlesRain;
+    [SerializeField] private ParticleSystem _particlesRain;
 	 private AudioSource _audioSource;
 	[SerializeField] private AudioClip _audioReward;
-	private int LogroSuma=5;
-	private int LogroMulti=100;
-	private int []LogroAgente = {1,5,20};
+	private int _achievementSuma=5;
+	private int _achievementMulti=100;
+	private bool _activeachievement=false;
+	private int []_achievementAgent = {1,5,20};
     #endregion
 
     #region Unity Callbacks
@@ -38,13 +42,15 @@ public class GameController : MonoBehaviour
     void Start()
     {
 		SlotButtonUI.OnSlotReward += GetReward;
-        
+        SlotButtonUI.OnSlotClicked += UpdateLastClickedScore;
+
 
     }
 	private void OnDestroy()
 	{
 		SlotButtonUI.OnSlotReward -= GetReward;
-	}
+        SlotButtonUI.OnSlotClicked -= UpdateLastClickedScore;
+    }
 
 	#endregion
 
@@ -53,10 +59,17 @@ public class GameController : MonoBehaviour
 	{
 		_particlesRain.Emit(Mathf.Clamp((int)ClickRatio, 0, 13));
 	}
-	#endregion
+    private void UpdateLastClickedScore(SlotButtonUI clickedButton)
+    {
+        if (_lastClickedScoreText != null)
+        {
+            _lastClickedScoreText.text = $"Ãšltimo slot: {clickedButton.ClicksLeft}";
+        }
+    }
+    #endregion
 
-	#region Private Methods
-	/***
+    #region Private Methods
+    /***
  *       ____    U _____ u                 _       ____     ____    _    
  *    U |  _"\ u \| ___"|/__        __ U  /"\  uU |  _"\ u |  _"\ U|"|u  
  *     \| |_) |/  |  _|"  \"\      /"/  \/ _ \/  \| |_) |//| | | |\| |/  
@@ -65,7 +78,7 @@ public class GameController : MonoBehaviour
  *      //   \\_  <<   >>.-,_\ /\ /_,-. \\    >>  //   \\_  |||_   |||_  
  *     (__)  (__)(__) (__)\_)-'  '-(_/ (__)  (__)(__)  (__)(__)_) (__)_) 
  */
-	private void GetReward(Reward reward)
+    private void GetReward(Reward reward)
 	{
 		ShowReward(reward);
 
@@ -74,9 +87,9 @@ public class GameController : MonoBehaviour
 		{
 			ClickRatio += reward.Value;
 			_clicksText.text = "x" + ClickRatio;
-			if(ClickRatio == LogroSuma)
+			if(ClickRatio == _achievementSuma)
             {
-                AchievementManager.UnlockAchievement("¡Suma y sigue!");
+                AchievementManager.UnlockAchievement("Â¡Suma y sigue!");
             }
             return;
 		}
@@ -85,9 +98,10 @@ public class GameController : MonoBehaviour
 		{
 			ClickRatio *= reward.Value;
 			_clicksText.text = "x" + ClickRatio;
-			if(ClickRatio == LogroMulti)
+			if(ClickRatio >= _achievementMulti && _activeachievement)
             {
-				AchievementManager.UnlockAchievement("¡El rey de la tabla de mutiplicar!");
+				AchievementManager.UnlockAchievement("Â¡El REY !");
+				_activeachievement = false;
             }
             return;
 		}
@@ -96,19 +110,19 @@ public class GameController : MonoBehaviour
 		{
             Agent newAgent = Instantiate(_agents[(int)reward.Value], transform.position, Quaternion.identity);
             newAgent.destiny = reward.ObjectReward;
-            //Se añade el nuevo agente a la lista de agentes activos
+            //Se aÃ±ade el nuevo agente a la lista de agentes activos
             _activeAgents.Add(newAgent); 
-			if(_activeAgents.Count== LogroAgente[0])
+			if(_activeAgents.Count== _achievementAgent[0])
 			{
-                AchievementManager.UnlockAchievement("¡Has invocado un agente por primera vez!");
+                AchievementManager.UnlockAchievement("Â¡Has invocado un agente por primera vez!");
 			}
-			if (_activeAgents.Count == LogroAgente[1])
+			if (_activeAgents.Count == _achievementAgent[1])
 			{
-                AchievementManager.UnlockAchievement("¡El amigo de los agentes!");
+                AchievementManager.UnlockAchievement("Â¡El amigo de los agentes!");
             }
-            if (_activeAgents.Count == LogroAgente[2])
+            if (_activeAgents.Count == _achievementAgent[2])
             {
-                AchievementManager.UnlockAchievement("¡Consiguelo a todos!");
+                AchievementManager.UnlockAchievement("Â¡Consiguelo a todos!");
             }
             return;
 		}
@@ -124,23 +138,32 @@ public class GameController : MonoBehaviour
 		}
         _audioSource.PlayOneShot(_audioReward);
         //Update text
-        _rewardText.text = "REWARD\n " + reward.RewardType + reward.Value + " Clicks";
+		if(reward.RewardType == RewardType.Plus)
+		{
+            _rewardText.text = "REWARD\n " + reward.RewardType + " " + reward.Value + " Clicks";
+        }
+		if(reward.RewardType == RewardType.Agent)
+		{
+            _rewardText.text = "REWARD\n " + reward.RewardType + " " + reward.Value;
+        }
+  
 
 		// Crear una secuencia
 		Sequence mySequence = DOTween.Sequence();
 
-		// Añadir el primer efecto de escala
+		// AÃ±adir el primer efecto de escala
 		mySequence.Append(_rewardText.transform.DOScale(1, 1));
 
-		// Añadir el efecto de sacudida en la rotación
+		// AÃ±adir el efecto de sacudida en la rotaciÃ³n
 		mySequence.Append(_rewardText.transform.DOShakeRotation(1, new Vector3(0, 0, 30)));
 
-		// Añadir el segundo efecto de escala
+		// AÃ±adir el segundo efecto de escala
 		mySequence.Append(_rewardText.transform.DOScale(0, 1));
 
 		// Iniciar la secuencia
 		mySequence.Play();
 
 	}
-	#endregion
+
+    #endregion
 }

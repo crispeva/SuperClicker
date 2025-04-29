@@ -17,6 +17,7 @@ public class Reward
 	[field: SerializeField] public RewardType RewardType { get; set; }
 	[field: SerializeField] public float Value { get; set; }
 	public SlotButtonUI ObjectReward { get; set; }
+	public SlotButtonUI [] allSlots { get; set; }
 	#endregion
 
 

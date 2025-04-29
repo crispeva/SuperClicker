@@ -8,14 +8,14 @@ public class SlotButtonUI : MonoBehaviour
 {
 	#region Properties
 	[field: SerializeField] public Reward Reward;
-	public int ClicksLeft {
+    public int ClicksLeft {
 		get {
 			return _clicksLeft;
 		}
 		set {
 			_clicksLeft = value;
-			//REWARD TIME!!!
-			if (_clicksLeft <= 0)
+            //REWARD TIME!!!
+            if (_clicksLeft <= 0)
 			{
 
 				//Reward Event
@@ -32,9 +32,10 @@ public class SlotButtonUI : MonoBehaviour
 					 GetComponent<Image>().enabled = false;
 					_clickButton.interactable = false;
 					_clicksText.enabled = false;
-					//Destroy(gameObject);
+					Allslot++;
                 }
-                _clicksLeft = Mathf.RoundToInt(_clicksLeft * 1.15f); //Incrementar un 15% los initial clicks cada vez que se gaste un stock
+                _clicksLeft = Mathf.RoundToInt(_clicksLeft * 1.15f);//Incrementar un 15% los initial clicks cada vez que se gaste un stock
+                Win();
                 RefreshClicksText();
 			}
 		} 
@@ -60,8 +61,10 @@ public class SlotButtonUI : MonoBehaviour
 	[SerializeField] private AudioClip _stockAudio;
     private AudioSource _audioSource;
 
+
     private GameController _game;
-	private int _stock = 2;
+	private int Allslot=0;
+	private int _stock = 5;
 	private int _clicksLeft = 0;
 	#endregion
 
@@ -95,25 +98,27 @@ public class SlotButtonUI : MonoBehaviour
 		tex.startFrame = frame;
 	}
 
-	#endregion
+    #endregion
 
-	#region Public Methods
-	public void Click(int clickCount, bool agent = false)
+    #region Public Methods
+    [Obsolete]
+    public void Click(int clickCount, bool agent = false)
 	{
         //Para asegurar que el clic no se ejecute si el botón no es interactuable
             
         if (_clickButton.interactable)
 		{
-            _particles.startSpeed = Mathf.Clamp(clickCount / 2, 1, 30);
-            _particles.Emit(Mathf.Clamp(clickCount, 1, 15));
+            _particles.startSpeed = Mathf.Clamp(clickCount / 2, 1, 5);
+            _particles.Emit(Mathf.Clamp(clickCount, 1, 5));
             ClicksLeft -= clickCount;
             RefreshClicksText();
             _audioSource.PlayOneShot(_hitAudio);
-            Camera.main.DOShakePosition(Mathf.Clamp(0.01f * clickCount, 0, 2));
             if (!agent)
             {
                 PointsElementUI newPoints = _game.Pool.GetPoints();
                 newPoints.Initialize(transform);
+				
+                Camera.main.DOShakePosition(Mathf.Clamp(0.01f * clickCount, 0, 2));
                 _game.RainParticles();
             }
         }
@@ -124,7 +129,11 @@ public class SlotButtonUI : MonoBehaviour
 	{
 		_clicksText.text = ClicksLeft.ToString();
 	}
-
+	private void Win()
+	{
+		if(Allslot == 12)
+            AchievementManager.UnlockAchievement("¡FELICIDADES NOS DEJASTE SIN SNACKS!");
+    }
 	#endregion
 
 	#region Private Methods
@@ -135,5 +144,5 @@ public class SlotButtonUI : MonoBehaviour
 		int clickRatio = Mathf.RoundToInt(_game.ClickRatio);
 		Click(clickRatio);
 	}
-	#endregion
+    #endregion
 }

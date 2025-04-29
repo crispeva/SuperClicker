@@ -31,9 +31,6 @@ public class AngelAgent : Agent
     {
         
             destiny.Click(1, true);
-        
-        if (destiny.ClicksLeft < 0)
-            Destroy(gameObject);
     }
     private void SetDestiny(SlotButtonUI newDestiny)
     {
