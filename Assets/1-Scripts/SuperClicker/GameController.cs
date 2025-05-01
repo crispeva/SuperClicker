@@ -59,6 +59,7 @@ public class GameController : MonoBehaviour
 	{
 		_particlesRain.Emit(Mathf.Clamp((int)ClickRatio, 0, 13));
 	}
+    //Setea el texto de los clicks 
     private void UpdateLastClickedScore(SlotButtonUI clickedButton)
     {
         if (_lastClickedScoreText != null)

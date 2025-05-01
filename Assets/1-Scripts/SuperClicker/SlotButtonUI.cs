@@ -117,7 +117,6 @@ public class SlotButtonUI : MonoBehaviour
             {
                 PointsElementUI newPoints = _game.Pool.GetPoints();
                 newPoints.Initialize(transform);
-				
                 Camera.main.DOShakePosition(Mathf.Clamp(0.01f * clickCount, 0, 2));
                 _game.RainParticles();
             }
