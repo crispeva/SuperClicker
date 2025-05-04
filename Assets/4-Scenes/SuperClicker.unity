@@ -1021,7 +1021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _initialClics
-      value: 80000
+      value: 90000
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
@@ -1363,7 +1363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _initialClics
-      value: 40000
+      value: 50000
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
@@ -3070,7 +3070,7 @@ PrefabInstance:
       objectReference: {fileID: -557590067, guid: 5458a0a9655824543ab7b4a5e03235d2, type: 3}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _initialClics
-      value: 20000
+      value: 200000
       objectReference: {fileID: 0}
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: _materialParticleIndex
@@ -8492,7 +8492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66a3ab4de5cd234286a0ed105740670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ClickRatio>k__BackingField: 1
+  <ClickRatio>k__BackingField: 100
   <Pool>k__BackingField: {fileID: 2006130957}
   _activeAgents: []
   _agents:
@@ -9295,6 +9295,10 @@ PrefabInstance:
     - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: Reward.<Value>k__BackingField
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748290303610665218, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
+      propertyPath: Reward.<RewardType>k__BackingField
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6894794783197622354, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: m_Pivot.x

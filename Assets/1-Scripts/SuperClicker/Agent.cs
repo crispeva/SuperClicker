@@ -15,6 +15,11 @@ public  class Agent : MonoBehaviour
         {
             // Si el valor es menor que 0.2f, se establece en 0.2f
             _repeatRate = Mathf.Max(value, 0.2f);
+            if (IsInvoking(nameof(Click)))
+            {
+                CancelInvoke(nameof(Click));
+                InvokeRepeating(nameof(Click), 1f, _repeatRate);
+            }
         }
     }
               
@@ -36,7 +41,7 @@ public  class Agent : MonoBehaviour
         game = GameObject.FindObjectOfType<GameController>();
         allSlotButtons = GameObject.FindObjectsOfType<SlotButtonUI>();
         Movement();
-        RepeatRate = 1.5f;
+        //RepeatRate = 1.5f;
     }
     protected virtual void Click()
     {
@@ -57,7 +62,7 @@ public  class Agent : MonoBehaviour
                 }
             }
 
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(5f);
 
             foreach (var agent in game._activeAgents)
             {
