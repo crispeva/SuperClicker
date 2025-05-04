@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: XRDreams
-  productName: SuperClicker
+  productName: SuperClickerSnack
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -154,7 +154,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.XRDreams.SuperClicker
+    Android: com.XRDreams.SuperClickerSnack
     Standalone: com.XRDreams.SuperClicker
   buildNumber:
     Standalone: 0
@@ -256,8 +256,8 @@ PlayerSettings:
   AndroidTargetDevices: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/santi/OneDrive/Desktop/sucperclicker.keystore
-  AndroidKeyaliasName: superclickeralias
+  AndroidKeystoreName: D:/Proyectos_Unity/FisrtKey.keystore
+  AndroidKeyaliasName: keycrispublish
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0

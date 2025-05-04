@@ -59,7 +59,6 @@ public class GameController : MonoBehaviour
 	{
 		_particlesRain.Emit(Mathf.Clamp((int)ClickRatio, 0, 13));
 	}
-    //Setea el texto de los clicks 
     private void UpdateLastClickedScore(SlotButtonUI clickedButton)
     {
         if (_lastClickedScoreText != null)
@@ -141,11 +140,11 @@ public class GameController : MonoBehaviour
         //Update text
 		if(reward.RewardType == RewardType.Plus)
 		{
-            _rewardText.text = "REWARD\n " + reward.RewardType + " " + reward.Value + " Clicks";
+            _rewardText.text = "RECOMPENSA\n " + reward.RewardType + " " + reward.Value + " Clicks";
         }
 		if(reward.RewardType == RewardType.Agent)
 		{
-            _rewardText.text = "REWARD\n " + reward.RewardType + " " + reward.Value;
+            _rewardText.text = "RECOMPENSA\n " + reward.RewardType + " " + reward.Value;
         }
   
 
