@@ -8492,7 +8492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66a3ab4de5cd234286a0ed105740670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ClickRatio>k__BackingField: 100
+  <ClickRatio>k__BackingField: 1
   <Pool>k__BackingField: {fileID: 2006130957}
   _activeAgents: []
   _agents:
