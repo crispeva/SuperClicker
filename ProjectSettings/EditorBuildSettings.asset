@@ -8,4 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/4-Scenes/SuperClicker.unity
     guid: a8b6a211ab2e6674190c0c32d4192e93
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a7c125842589f884bb0a362ace0cd807, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e7ae65a18f09c3d4fb6e3c88e7e24d98, type: 2}

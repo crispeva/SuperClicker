@@ -123,8 +123,15 @@ public class SlotButtonUI : MonoBehaviour
         }
        
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Hand"))
+		{
+			Click();
+        }
+    }
 
-	private void RefreshClicksText()
+    private void RefreshClicksText()
 	{
 		_clicksText.text = ClicksLeft.ToString();
 	}
