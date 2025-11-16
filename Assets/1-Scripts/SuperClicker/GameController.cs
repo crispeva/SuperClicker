@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour
 	private TextMeshProUGUI _clicksText;
     private TextMeshProUGUI _lastClickedScoreText;
 
-    [SerializeField] private ParticleSystem _particlesRain;
+    private ParticleSystem _particlesRain;
 	 private AudioSource _audioSource;
 	[SerializeField] private AudioClip _audioReward;
 	private int _achievementSuma=5;
@@ -50,11 +50,12 @@ public class GameController : MonoBehaviour
     }
     public void SetUIReferences(TextMeshProUGUI rewardText,
                             TextMeshProUGUI clicksText,
-                            TextMeshProUGUI lastClickedText, ParticleSystem _particlesRain)
+                            TextMeshProUGUI lastClickedText, ParticleSystem particlesRain)
     {
         _rewardText = rewardText;
         _clicksText = clicksText;
         _lastClickedScoreText = lastClickedText;
+        _particlesRain = particlesRain;
     }
     private void OnDestroy()
 	{
