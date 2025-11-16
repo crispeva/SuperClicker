@@ -10,8 +10,9 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-	#region Properties
-	[field:SerializeField] public float ClickRatio { get; set; }
+    #region Properties
+    public static GameController Instance;
+    [field:SerializeField] public float ClickRatio { get; set; }
 	[field:SerializeField] public PoolSystem Pool { get; set; }
 	[field: SerializeField] public List<Agent> _activeAgents = new List<Agent>();
 
@@ -19,9 +20,9 @@ public class GameController : MonoBehaviour
 
 	#region Fields
 	[SerializeField] private Agent[] _agents;
-	[SerializeField] private TextMeshProUGUI _rewardText;
-	[SerializeField] private TextMeshProUGUI _clicksText;
-    [SerializeField] private TextMeshProUGUI _lastClickedScoreText;
+	private TextMeshProUGUI _rewardText;
+	private TextMeshProUGUI _clicksText;
+    private TextMeshProUGUI _lastClickedScoreText;
 
     [SerializeField] private ParticleSystem _particlesRain;
 	 private AudioSource _audioSource;
@@ -37,6 +38,7 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         //Initialization
+        Instance = this;
         _audioSource = GetComponent<AudioSource>();
     }
     void Start()
@@ -46,7 +48,15 @@ public class GameController : MonoBehaviour
 
 
     }
-	private void OnDestroy()
+    public void SetUIReferences(TextMeshProUGUI rewardText,
+                            TextMeshProUGUI clicksText,
+                            TextMeshProUGUI lastClickedText, ParticleSystem _particlesRain)
+    {
+        _rewardText = rewardText;
+        _clicksText = clicksText;
+        _lastClickedScoreText = lastClickedText;
+    }
+    private void OnDestroy()
 	{
 		SlotButtonUI.OnSlotReward -= GetReward;
         SlotButtonUI.OnSlotClicked -= UpdateLastClickedScore;

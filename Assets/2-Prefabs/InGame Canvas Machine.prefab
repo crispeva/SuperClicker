@@ -5680,6 +5680,7 @@ GameObject:
   - component: {fileID: 7760978392631661354}
   - component: {fileID: 6288607940277214337}
   - component: {fileID: 724623575419153404}
+  - component: {fileID: 5349670992352602365}
   m_Layer: 5
   m_Name: InGame Canvas Machine
   m_TagString: Untagged
@@ -5762,7 +5763,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &6288607940277214337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5876,6 +5877,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5349670992352602365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3392675885559442232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fba202f586015343bdd75dc1d0dbf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rewardTextPrefab: {fileID: 5871480953414419655}
+  _clicksTextPrefab: {fileID: 927000877984374361}
+  _lastClickedTextPrefab: {fileID: 4610357269929240232}
+  _particlesRain: {fileID: 1115355676413907620}
+  _popupParent: {fileID: 5317571029595484514}
 --- !u!1 &3786452258435199493
 GameObject:
   m_ObjectHideFlags: 0

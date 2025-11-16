@@ -12,13 +12,13 @@ public class AchievementManager : MonoBehaviour
 
     #region Fields
     [SerializeField]private GameObject achievementPopupPrefab; // Prefab del popup
-    [SerializeField] private Transform popupParent; // Donde instanciarlo 
+    private Transform _popupParent; // Donde instanciarlo 
     #endregion
 
     #region Unity Callbacks
     void Start()
     {
-        
+        SetUIReferences(_popupParent);
     }
 
     // Update is called once per frame
@@ -29,10 +29,14 @@ public class AchievementManager : MonoBehaviour
     #endregion
 
     #region Public Methods
+    public void SetUIReferences(Transform popupParent)
+    {
+        _popupParent = popupParent;
+    }
     public void ShowAchievement(string achievementText)
     {
         
-        GameObject popup = Instantiate(achievementPopupPrefab, popupParent);
+        GameObject popup = Instantiate(achievementPopupPrefab, _popupParent);
         AchiviementPopupUI popupUI = popup.GetComponent<AchiviementPopupUI>();
         AnimatePopup(popup);
         if (popupUI.AchievementText.text != null)
