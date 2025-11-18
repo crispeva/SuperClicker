@@ -5763,7 +5763,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &6288607940277214337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6896,11 +6896,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
-      value: 0.2
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
+      propertyPath: InitialModule.startSizeZ.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3856961941412363450, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: m_Sprite
@@ -7177,11 +7181,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
-      value: 0.2
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
+      propertyPath: InitialModule.startSizeZ.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3856961941412363450, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: m_Sprite
@@ -7323,11 +7331,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
-      value: 0.2
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
+      propertyPath: InitialModule.startSizeZ.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3856961941412363450, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: m_Sprite
@@ -7473,11 +7485,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
-      value: 0.2
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
+      propertyPath: InitialModule.startSizeZ.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3856961941412363450, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: m_Sprite
@@ -7762,7 +7778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeZ.scalar
@@ -7924,11 +7940,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
-      value: 0.2
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
+      propertyPath: InitialModule.startSizeZ.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3856961941412363450, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: m_Sprite
@@ -8082,11 +8102,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
-      value: 0.2
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
+      propertyPath: InitialModule.startSizeZ.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3856961941412363450, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: m_Sprite
@@ -8236,11 +8260,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
-      value: 0.2
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
+      propertyPath: InitialModule.startSizeZ.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3856961941412363450, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: m_Sprite
@@ -8374,11 +8402,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
-      value: 0.2
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
+      propertyPath: InitialModule.startSizeZ.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
@@ -8516,11 +8548,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
-      value: 0.2
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
+      propertyPath: InitialModule.startSizeZ.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3856961941412363450, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: m_Sprite
@@ -8674,7 +8710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeZ.scalar
@@ -8824,11 +8860,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
-      value: 0.2
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579118031734170765, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
+      propertyPath: InitialModule.startSizeZ.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3856961941412363450, guid: f47da1dbd6a00f74f88641e102cb703e, type: 3}
       propertyPath: m_Sprite

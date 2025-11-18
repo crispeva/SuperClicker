@@ -9,7 +9,7 @@ public class GosthAgent : Agent
     #region Properties
     float leftLimit; // Límite izquierdo
     float rightLimit;
-    private float speed = 20f; // Velocidad del movimiento
+    private float speed = 1f; // Velocidad del movimiento
     private int direction = 1;
     #endregion
 
@@ -17,8 +17,8 @@ public class GosthAgent : Agent
     #endregion
     private void Awake()
     {
-        leftLimit = transform.position.x - 200f;
-        rightLimit = transform.position.x + 200f;
+        leftLimit = transform.position.x - 0.1f;
+        rightLimit = transform.position.x + 0.1f;
     }
     #region Unity Callbacks
     protected override void Start()
